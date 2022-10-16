@@ -1,9 +1,9 @@
-#!/usr/bin/env python 3
+#!/usr/bin/env python3
 
-from . import useful_package
+import useful_package
 import sys 
 
 x = float(sys.argv[-1]) 
 
-print(x, polynom_3(x), hyperbola(x))
+print(x, useful_package.module_a.polynom_3(x), useful_package.module_b.hyperbola(x))
 
